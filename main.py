@@ -23,9 +23,7 @@ def btn_click(number):
             guessed_numbers = ''
             title['text'] = '******'
             generate_random_number()
-
-
-generate_random_number()
+            
 
 root = Tk()
 root['bg'] = 'yellow'
@@ -62,4 +60,5 @@ btn0 = Button(frame, text='0', bg='purple', command=lambda: btn_click('0'))
 btn0.place(x=200, y=410, width=50, height=50)
 
 if __name__ == '__main__':
+    generate_random_number()
     root.mainloop()
